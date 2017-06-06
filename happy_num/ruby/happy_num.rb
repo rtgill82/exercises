@@ -1,12 +1,11 @@
 #!/usr/bin/ruby
 #
 # Created:  Mon 05 Jun 2017 10:55:34 PM PDT
-# Modified: Mon 05 Jun 2017 11:06:42 PM PDT
+# Modified: Mon 05 Jun 2017 11:33:35 PM PDT
 #
 # Find the first 8 happy numbers
 # Author: Robert Gill <locke@sdf.lonestar.org>
 # Copyright 2017 (C) Robert Gill
-#   All rights reserved.
 #
 
 class Integer

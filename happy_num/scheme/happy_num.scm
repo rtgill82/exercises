@@ -1,14 +1,12 @@
-#!/usr/bin/guile -s
-!#
 ;
 ; Created:  Fri 02 Jun 2017 12:36:50 PM PDT
-; Modified: Sat 03 Jun 2017 12:08:22 PM PDT
+; Modified: Mon 05 Jun 2017 11:33:45 PM PDT
 ;
 ; Find the first 8 happy numbers
 ; Author: Robert Gill <locke@sdf.lonestar.org>
 ; Copyright 2017 (C) Robert Gill
-;   All rights reserved.
 ;
+
 (define NUM 2)
 (define MAX 8)
 
