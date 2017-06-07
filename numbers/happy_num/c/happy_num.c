@@ -1,11 +1,9 @@
-/** \file happy_num.c
+/*
+ * Created:  Tue 30 May 2017 12:43:28 PM PDT
+ * Modified: Wed 07 Jun 2017 12:24:25 AM PDT
  *
- * - Created:  Tue 30 May 2017 12:43:28 PM PDT
- * - Modified: Mon 05 Jun 2017 11:33:26 PM PDT
- *
- * \brief Find the first 8 happy numbers
- * \author Robert Gill &lt;locke@sdf.lonestar.org&gt;
- * \copyright 2017 (C) Robert Gill
+ * Author: Robert Gill <locke@sdf.lonestar.org>
+ * Copyright 2017 (C) Robert Gill
  *
  */
 

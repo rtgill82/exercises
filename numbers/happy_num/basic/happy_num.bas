@@ -1,8 +1,7 @@
 REM
 REM Created:  Mon 05 Jun 2017 06:40:06 PM PDT
-REM Modified: Mon 05 Jun 2017 11:33:14 PM PDT
+REM Modified: Wed 07 Jun 2017 12:23:15 AM PDT
 REM
-REM Find the first 8 happy numbers
 REM Author: Robert Gill <locke@sdf.lonestar.org>
 REM Copyright 2017 (C) Robert Gill
 REM

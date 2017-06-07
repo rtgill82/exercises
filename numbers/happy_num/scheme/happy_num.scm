@@ -1,8 +1,7 @@
 ;
 ; Created:  Fri 02 Jun 2017 12:36:50 PM PDT
-; Modified: Mon 05 Jun 2017 11:33:45 PM PDT
+; Modified: Wed 07 Jun 2017 12:24:43 AM PDT
 ;
-; Find the first 8 happy numbers
 ; Author: Robert Gill <locke@sdf.lonestar.org>
 ; Copyright 2017 (C) Robert Gill
 ;
