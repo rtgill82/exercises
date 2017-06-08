@@ -1,8 +1,7 @@
 /*
  * Created:  Tue 30 May 2017 12:43:28 PM PDT
- * Modified: Wed 07 Jun 2017 12:24:25 AM PDT
+ * Modified: Thu 08 Jun 2017 12:40:54 PM PDT
  *
- * Author: Robert Gill <locke@sdf.lonestar.org>
  * Copyright 2017 (C) Robert Gill
  *
  */
