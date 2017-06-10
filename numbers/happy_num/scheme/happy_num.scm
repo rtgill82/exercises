@@ -1,21 +1,19 @@
 ;
 ; Created:  Fri 02 Jun 2017 12:36:50 PM PDT
-; Modified: Thu 08 Jun 2017 12:40:24 PM PDT
+; Modified: Sat 10 Jun 2017 04:20:29 PM PDT
 ;
 ; Copyright 2017 (C) Robert Gill
 ;
 
-(define NUM 2)
+(define START 2)
 (define MAX 8)
 
 (define (sum-sqr-digits num)
-  (sum-sqr-digits-recurse num 0))
-
-(define (sum-sqr-digits-recurse num sum)
-  (if (zero? num) sum
-    (let ((digit (modulo num 10)))
-      (sum-sqr-digits-recurse (quotient num 10)
-			      (+ sum (* digit digit))))))
+  (define (sum-sqr-digits-r num sum)
+    (if (zero? num) sum
+      (let ((digit (modulo num 10)))
+	(sum-sqr-digits-r (quotient num 10)(+ sum (* digit digit))))))
+  (sum-sqr-digits-r num 0))
 
 (define (happyp num)
   (let ((num (sum-sqr-digits num)))
@@ -23,15 +21,14 @@
       (happyp num)
       (eq? num 1))))
 
-(define (list-happy-nums start)
-  (list-happy-nums-recurse start 0))
+(define (list-happy-nums start max)
+  (define (list-happy-nums-r num count)
+    (if (>= count max) '()
+      (if (happyp num)
+	(begin (display num) (display " is a Happy Number!")
+	       (newline)
+	       (list-happy-nums-r (1+ num) (1+ count)))
+	(list-happy-nums-r (1+ num) count))))
+  (list-happy-nums-r start 0))
 
-(define (list-happy-nums-recurse num count)
-  (if (>= count MAX) '()
-    (if (happyp num)
-      (begin (display num) (display " is a Happy Number!")
-	     (newline)
-	     (list-happy-nums-recurse (1+ num) (1+ count)))
-      (list-happy-nums-recurse (1+ num) count))))
-
-(list-happy-nums NUM)
+(list-happy-nums START MAX)
