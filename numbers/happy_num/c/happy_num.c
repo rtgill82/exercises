@@ -1,21 +1,13 @@
 /*
  * Created:  Tue 30 May 2017 12:43:28 PM PDT
- * Modified: Thu 08 Jun 2017 12:40:54 PM PDT
+ * Modified: Sun 11 Jun 2017 06:20:58 PM PDT
  *
  * Copyright 2017 (C) Robert Gill
  *
  */
 
-#ifdef HAVE_CONFIG_H
-#include "config.h"
-#endif
-
 #include <stdio.h>
 #include <stdlib.h>
-
-#ifdef WITH_DMALLOC
-#include <dmalloc.h>
-#endif
 
 int
 sum_sqr_digits (int num)
@@ -56,5 +48,5 @@ main (int argc, char **argv)
       num += 1;
     }
 
-  return 0;
+  return EXIT_SUCCESS;
 }
