@@ -1,6 +1,6 @@
 ;
 ; Created:  Fri 16 Jun 2017 01:32:07 PM PDT
-; Modified: Fri 16 Jun 2017 02:31:19 PM PDT
+; Modified: Tue 20 Jun 2017 10:45:29 AM PDT
 ;
 ; Copyright 2017 (C) Robert Gill
 ;
@@ -13,5 +13,7 @@
     product))
 
 (define (factorial-recurse n)
-  (if (zero? n) 1
-    (* n (factorial-recurse (1- n)))))
+  (define (f n product)
+    (if (zero? n) product
+      (f (1- n) (* n product))))
+  (f n 1))
