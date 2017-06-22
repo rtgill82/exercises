@@ -1,6 +1,6 @@
 ;
 ; Created:  Fri 16 Jun 2017 01:32:07 PM PDT
-; Modified: Tue 20 Jun 2017 10:45:29 AM PDT
+; Modified: Wed 21 Jun 2017 05:37:40 PM PDT
 ;
 ; Copyright 2017 (C) Robert Gill
 ;
@@ -17,3 +17,10 @@
     (if (zero? n) product
       (f (1- n) (* n product))))
   (f n 1))
+
+(display "Enter a number: ")
+(let ((num (read)))
+  (display "Iterative: ")
+  (display (factorial-iter num))(newline)
+  (display "Recursive: ")
+  (display (factorial-recurse num))(newline))
