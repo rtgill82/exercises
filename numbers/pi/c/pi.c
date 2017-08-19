@@ -1,6 +1,6 @@
 /*
  * Created:  Sat 22 Jul 2017 04:07:20 PM PDT
- * Modified: Sun 23 Jul 2017 01:11:21 PM PDT
+ * Modified: Sat 19 Aug 2017 10:50:50 AM PDT
  *
  * Copyright 2017 (C) Robert Gill
  *
@@ -84,14 +84,20 @@ main (int argc, char *argv[])
   if (argc < 2 || (digits = atoi(argv[1])) == 0)
     {
       printf ("USAGE: pi <NUMDIGITS>\n");
-      exit (EXIT_SUCCESS);
+      return EXIT_SUCCESS;
+    }
+
+  if (digits == 1)
+    {
+      puts("3");
+      return EXIT_SUCCESS;
     }
 
   len = 10 * digits / 3;
   if ((buf = init_spigot (len)) == NULL)
     {
       fprintf (stderr, "Unable to allocate required memory!\n");
-      exit (EXIT_FAILURE);
+      return EXIT_FAILURE;
     }
 
   for (int i = 0; i < digits; i++)
@@ -101,5 +107,5 @@ main (int argc, char *argv[])
     }
 
   printf ("\n");
-  return 0;
+  return EXIT_SUCCESS;
 }
